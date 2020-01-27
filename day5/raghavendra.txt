@@ -1,1 +1,0 @@
-store procedure to do basic arithmatic operations and store in database
