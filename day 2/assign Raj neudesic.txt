@@ -1,0 +1,21 @@
+1 ) difference between null and string empty.
+
+Empty because it is a static variable, rather than "" which has to create a new string, and null means that you must then set the string equal to a new instance of a string.
+
+2) differece between string and String in class.
+
+UpperCamel case defines a Class. So String is a class that has methods in C# and string belongs to datatypes.
+
+3) access specifier
+
+Access modifiers and specifiers are keywords (private, public, internal, protected and protected internal) to specify the accessibility of a type and its members.
+
+private: limits the accessibility of a member to within the defined type, for example if a variable or a functions is being created in a ClassA and declared as private then another ClassB can't access that.
+
+public: has no limits, any members or types defined as public can be accessed within the class, assembly even outside the assembly. Most DLLs are known to be produced by public class and members written in a .cs file.
+
+internal: class members to be accessible within the assembly. An assembly is the produced .dll or .exe from your .NET Language code (C#). Hence, if 3 classes ClassA, ClassB and ClassC then any internal type and members will become accessible across the classes with in the assembly.
+
+protected: plays a role only when inheritance is used. In other words any protected type or member becomes accessible when a child is inherited by the parent. In other cases (when no inheritance) protected members and types are not visible.
+
+Protected internal: is a combination of protected and internal both. A protected internal will be accessible within the assembly due to its internal flavor and also via inheritance due to its protected flavor.
